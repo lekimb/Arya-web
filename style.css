@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    background-color: inherit;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+body {
+    background-color: #f8f7f5;
+    padding: 0;
+    margin: 0;
+    color: #1a1914;
+    /* Inter 400 */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+header {
+    border-bottom: 1px solid #d4d1c5;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0.5rem 0;
+}
+
+nav ul li {
+    list-style: none;
+    font-weight: 600;
+    line-height: 1.25rem;
+}
+
+main {
+    margin: auto;
+    max-width: 1200px;
+    min-height: calc(100dvh - 85px - 64px);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2.5rem;
+}
+
+h1 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    line-height: 1.25rem;
+    margin-bottom: 1.25rem;
+    text-align: justify;
+}
+
+p:last-child {
+    margin-bottom: 2.5rem;
+}
+
+strong {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #1a1914;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Index */
+.presentacion {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 4rem;
+}
+
+@media (max-width: 768px) {
+    .presentacion {
+        display: block;
+    }
+}
+
+.presentacion img {
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+
+.apodos ul li {
+    line-height: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.apodos ul li::before {
+    content: "·";
+    font-weight: bold;
+}
+
+.apodos {
+    margin-bottom: 1.75rem;
+}
+
+/* Lista */
+.lista-nombres {
+    margin: auto;
+    max-width: 600px;
+}
+
+.lista-nombres .contenedor {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .lista-nombres .contenedor {
+        flex-direction: column-reverse;
+    }
+}
+
+.lista-nombres form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 2.5rem;
+}
+
+.lista-nombres form input {
+    padding: 10px 12px;
+    flex-grow: 1;
+    max-width: 400px;
+    border: #d4d1c5 solid 1px;
+    color: #787567;
+    border-radius: 8px;
+    background-color: #f1f0ec;
+    line-height: 1.25rem;
+}
+
+.lista-nombres form button {
+    background-color: #393830;
+    color: #f8f7f5;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    line-height: 1.25rem;
+    height: 40px;
+    padding: 0 12px;
+}
+
+.etiquetas {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+    gap: 1.25rem;
+}
+
+.etiqueta {
+    display: flex;
+    font-weight: 600;
+    gap: 0.5rem;
+    align-items: center;
+    color: #c5c1b2;
+}
+
+.etiqueta:hover {
+    cursor: pointer;
+}
+
+.etiqueta-activa {
+    color: #1a1914;
+}
+
+.etiqueta span {
+    background-color: #c5c1b2;
+    color: white;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 400;
+    padding: 0.25rem 0.75rem;
+    border-radius: 16px;
+}
+
+.etiqueta-activa span {
+    background-color: #787567;
+}
+
+.nombres li {
+    background-color: white;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.nombres li label:hover {
+    cursor: pointer;
+}
+
+.nombres .nombre-seleccionado {
+    color: #c5c1b2;
+}

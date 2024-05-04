@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lista</title>
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/">Inicio</a></li>
+                    <li><img src="Logo.svg" alt="Stark logo" /></li>
+                    <li><a href="/lista.html">Lista</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="lista-nombres">
+                <h1>Mi lista de nombres</h1>
+                <div class="contenedor">
+                    <form id="formularioNombre">
+                        <input
+                            id="inputNombre"
+                            type="text"
+                            placeholder="Joffrey Baratheon..."
+                        />
+                        <button>Añadir</button>
+                    </form>
+                    <ul class="etiquetas">
+                        <li
+                            id="etiqueta-todos"
+                            class="etiqueta etiqueta-activa"
+                        >
+                            Todos
+                            <span>0</span>
+                        </li>
+                        <li id="etiqueta-pendientes" class="etiqueta">
+                            Pendientes
+                            <span>0</span>
+                        </li>
+                        <li id="etiqueta-completados" class="etiqueta">
+                            Completados
+                            <span>0</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="nombres">
+                    <!-- <li>
+                        <label class="nombre-seleccionado"
+                            >Tywin Lannister
+                            <input type="checkbox" checked hidden
+                        /></label>
+                        <img src="Check.svg" alt="" />
+                    </li>
+                    <li>
+                        <label
+                            >Melisandre <input type="checkbox" hidden
+                        /></label>
+                        <img src="Check-empty.svg" alt="" />
+                    </li>
+                    <li>
+                        <label
+                            >Beric Dondarrion <input type="checkbox" hidden
+                        /></label>
+                        <img src="Check-empty.svg" alt="" />
+                    </li> -->
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <img src="Logo.svg" alt="" />
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>
